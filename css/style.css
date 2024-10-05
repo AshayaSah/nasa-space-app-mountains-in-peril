@@ -1,0 +1,254 @@
+/* General Styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800;900&display=swap');
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  line-height: 1.6;
+  background-color: #ecedef;
+  color: #192030;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/* Hero section styles */
+.hero {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  height: 100vh;
+  background-image: url('../assets/hero.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-options {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-options li {
+  margin-right: 20px;
+}
+
+.hero-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+
+  padding-top: 50px;
+}
+
+.heading {
+  text-shadow: 5px 5px 20px black;
+
+  font-size: 10rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.button-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button{
+  width: 150px;
+  height: 50px;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.28);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.button-container p{
+  color: white;
+  font-size: 3rem;
+  text-shadow: 5px 5px 20px black;
+}
+
+/* Page 2 */
+.change-section{
+  height: 100vh;
+}
+
+.change-section h2{
+  height: 20vh;
+  text-align: center;
+  color: #192030;
+  padding: 50px;
+  font-size: 3rem;
+}
+
+.flex-container{
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  padding-bottom: 50px;
+}
+
+.column-1{
+  padding-right: 20px;
+  width: 40%;
+  overflow: hidden;
+}
+
+.vertical-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  height: 731px;
+}
+
+.column-2 {
+  height: 100%;
+  width: 60%;
+  padding-left: 20px;
+  overflow: hidden;
+}
+
+.text-row {
+  height: 255.85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-row P{
+  font-size: 1.5rem;
+}
+
+.image-row {
+  height: 475px;
+}
+
+.landscape-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+
+/* Factors affecting climate change section styles */
+.factors-section {
+  padding: 50px;
+}
+
+.factors-section h2{
+  height: 20vh;
+  text-align: center;
+  color: #192030;
+  padding: 50px;
+  font-size: 3rem;
+}
+
+.factor-flex-container {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.factor-image {
+  position: relative; /* Allows positioning elements inside the image container */
+  overflow: hidden;
+  width: 70%;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.climate-image {
+  width: 100%;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%); /* Centers the controls vertically */
+  pointer-events: none; /* Allows clicking on images without being blocked by controls */
+}
+
+.carousel-controls .prev,
+.carousel-controls .next {
+  pointer-events: auto; /* Enables click events for the control buttons */
+  cursor: pointer;
+  font-size: 36px;
+  padding: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5); /* Adds a translucent background for visibility */
+  border-radius: 50%;
+  user-select: none;
+}
+
+.carousel-controls .prev {
+  margin-left: 10px;
+}
+
+.carousel-controls .next {
+  margin-right: 10px;
+}
+
+.carousel-controls .prev:hover,
+.carousel-controls .next:hover {
+  background: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+.factor-description {
+  width: 30%;
+  padding: 40px;
+}
+
+.subheading {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1em;
+  color: #555;
+}
