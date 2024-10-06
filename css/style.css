@@ -9,6 +9,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling across the whole page */
+}
+
 body {
   font-family: Poppins, sans-serif;
   line-height: 1.6;
@@ -74,34 +78,60 @@ a{
   color: #fff;
 }
 
-.button-container{
+
+/* Button Container Styling */
+.button-container {
   width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  padding: 0 220px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-between;
 }
 
-button{
-  width: 150px;
-  height: 50px;
-  color: white;
-  font-size: 1.5rem;
-  border: none;
-  border-radius: 10px;
-  /* From https://css.glass */
-background: rgba(255, 255, 255, 0.28);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+/* Explore Button Styling */
+.explore-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between image and text */
+  text-decoration: none;
+  background-color: #ecedef;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.button-container p{
+/* On hover, make the button stand out */
+.explore-btn:hover {
+  background-color: white;
+  transform: translateY(-7px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Image inside the button (Search Icon) */
+.explore-btn img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain; /* Ensure the image fits properly */
+}
+
+/* Text inside the button */
+.explore-btn p {
+  font-size: 1.2em;
+  color: #333;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Styling for the status text "IN DANGER" */
+.status-text {
+  font-size: 2.5em;
   color: white;
-  font-size: 3rem;
-  text-shadow: 5px 5px 20px black;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* Page 2 */
@@ -130,6 +160,11 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   padding-right: 20px;
   width: 40%;
   overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.column-1:hover{
+  transform: translateY(-10px);
 }
 
 .vertical-image {
@@ -138,6 +173,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   object-fit: cover;
   overflow: hidden;
+  box-shadow: 0 1px 10px #192030;
 }
 
 .column-2 {
@@ -166,8 +202,14 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   object-fit: cover;
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 0 1px 10px #192030;
+
+  transition: 0.3s ease-in-out;
 }
 
+.landscape-image:hover{
+  transform: translateY(-10px);
+}
 
 /* Factors affecting climate change section styles */
 .factors-section {
@@ -300,3 +342,211 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 1em;
 }
 
+
+/* Team Section Styling */
+.team-section {
+  padding: 60px;
+  text-align: center;
+  background-color: #ecedef;
+}
+
+.team-heading {
+  margin-top: 120px;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #192030;;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.team-member {
+  width: 22%;
+  aspect-ratio: 9 / 13; /* 9:16 aspect ratio */
+  background-color: #ecedef;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+/* Member Image */
+.member-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crop image from the center */
+  object-position: center; /* Center the cropped area */
+}
+
+/* Member Info */
+.member-info {
+  padding: 20px;
+  text-align: center;
+  background-color: #ecedef;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.member-name {
+  font-size: 1.5em;
+  color: #192030;;
+}
+
+.member-role {
+  font-size: 1.1em;
+  color: #777;
+}
+
+/* Hover effect to reveal the overlay */
+.member-overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background-color: #192030;;
+  color: #ecedef;
+  padding: 20px;
+  text-align: center;
+  transition: bottom 0.3s ease;
+}
+
+.team-member:hover .member-overlay {
+  bottom: 0;
+}
+
+.overlay-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.overlay-description {
+  font-size: 1em;
+}
+
+/* relation */
+
+.relation-container {
+  background-color: #ecedef;
+  color: #192030;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  margin-top: 200px;
+  padding: 0 50px;
+}
+
+.relation-container h1 {
+  font-size: 3rem;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #192030;
+  color: #ecedef;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.column-1-footer {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.column-2-footer {
+  width: 50%;
+  padding-left: 20px;
+}
+
+.team-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.email {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.phone {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.social-media {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #ccc;
+}
+
+.instagram {
+  background-image: url('instagram-icon.png');
+  background-size: 20px 20px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.facebook {
+  background-image: url('facebook-icon.png');
+  background-size: 20px 20px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.github {
+  background-image: url('github-icon.png');
+  background-size: 20px 20px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
