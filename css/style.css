@@ -71,11 +71,11 @@ a{
 }
 
 .heading {
-  text-shadow: 5px 5px 20px black;
+  text-shadow: 3px 3px 20px black;
 
   font-size: 10rem;
   font-weight: bold;
-  color: #fff;
+  color:  #ffffff;
 }
 
 
@@ -121,7 +121,7 @@ a{
 /* Text inside the button */
 .explore-btn p {
   font-size: 1.2em;
-  color: #333;
+  color:#192030;
   margin: 0;
   font-weight: bold;
 }
@@ -132,6 +132,8 @@ a{
   color: white;
   font-weight: bold;
   text-transform: uppercase;
+
+  text-shadow: 3px 3px 20px black
 }
 
 /* Page 2 */
