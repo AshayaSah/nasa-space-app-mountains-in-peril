@@ -1,5 +1,4 @@
 /* General Styling */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800;900&display=swap');
 
 /* Global styles */
@@ -16,7 +15,7 @@ body {
   color: #192030;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
@@ -26,7 +25,7 @@ a{
   display: grid;
   grid-template-rows: 100px 1fr;
   height: 100vh;
-  background-image: url('../assets/hero-2.png');
+  background-image: url('assets/hero-1.png');
   background-size: cover;
   background-position: center;
 }
@@ -35,7 +34,8 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  flex-wrap: wrap;
+  padding:0 20px;
 }
 
 .logo {
@@ -62,19 +62,17 @@ a{
   flex-direction: column;
   align-items: center;
   height: 100%;
-
   padding-top: 50px;
 }
 
 .heading {
   text-shadow: 5px 5px 20px black;
-
   font-size: 10rem;
   font-weight: bold;
   color: #fff;
 }
 
-.button-container{
+.button-container {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -82,7 +80,7 @@ a{
   align-items: center;
 }
 
-button{
+button {
   width: 150px;
   height: 50px;
   color: white;
@@ -90,102 +88,94 @@ button{
   border: none;
   border-radius: 10px;
   /* From https://css.glass */
-background: rgba(255, 255, 255, 0.28);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.button-container p{
+.button-container p {
   color: white;
-  font-size: 3rem;
+  font-size: 5vw;
   text-shadow: 5px 5px 20px black;
 }
 
 /* Page 2 */
-.change-section{
+.change-section {
   height: 100vh;
+  padding: 20px;
 }
 
-.change-section h2{
+.change-section h2 {
   height: 20vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   color: #192030;
-  font-size: 3rem;
+  padding: 20px;
+  font-size: 2.5rem;
 }
 
-.flex-container{
+.flex-container {
   height: 80vh;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 50px;
-  padding-bottom: 20px;
+  gap: 20px;
 }
 
-.column-1{
-  padding-right: 20px;
-  width: 40%;
+.column-1 {
+  width: 100%;
   overflow: hidden;
 }
 
 .vertical-image {
-  height: 500px;
   width: 100%;
   border-radius: 20px;
   object-fit: cover;
-  overflow: hidden;
 }
 
 .column-2 {
-  height: 100%;
-  width: 60%;
-  padding-left: 20px;
+  width: 100%;
   overflow: hidden;
 }
 
 .text-row {
-  height: 200px;
-  padding-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
-.text-row P{
+.text-row p {
   font-size: 1rem;
 }
 
+.image-row {
+  margin-top: 20px;
+}
+
 .landscape-image {
-  height: 280px;
   width: 100%;
-  height: 100%;
   object-fit: cover;
   border-radius: 20px;
-  overflow: hidden;
 }
 
 
 /* Factors affecting climate change section styles */
 .factors-section {
-  padding: 0 50px;
+  padding: 50px;
 }
 
 .factors-section h2{
-  padding-top: 50px;
   height: 20vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   color: #192030;
+  padding: 50px;
   font-size: 3rem;
 }
 
 .factor-flex-container {
-  margin-top: 40px;
+  margin-top: 50px;
   display: flex;
   align-items: center;
 }
@@ -193,7 +183,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .factor-image {
   position: relative; /* Allows positioning elements inside the image container */
   overflow: hidden;
-  width: 65%;
+  width: 70%;
 }
 
 .carousel {
@@ -224,8 +214,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 36px;
   padding: 10px;
   color: white;
-  background: rgba(0, 0, 0, 0.2); /* Adds a translucent background for visibility */
-  border-radius: 25%;
+  background: rgba(0, 0, 0, 0.5); /* Adds a translucent background for visibility */
+  border-radius: 50%;
   user-select: none;
 }
 
@@ -243,60 +233,16 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .factor-description {
-  width: 35%;
+  width: 30%;
   padding: 40px;
-  max-height: 300px; /* Set the maximum height */
-  overflow: auto;    /* or overflow: hidden; */
-  transition: 0.3s all ease-in-out;
-}
-
-.left-margin{
-  margin-left: 20px;
-}
-
-.factor-description:hover {
-  /* Reveal scrollbar on hover for Firefox */
-  scrollbar-width: thin; /* Show thin scrollbar when hovered */
-}
-
-/* Webkit browsers (Chrome, Safari, Edge) */
-.factor-description::-webkit-scrollbar {
-  width: 0; /* Initially hide scrollbar */
-  transition: width 0.3s ease-in-out;
-}
-
-/* When hovered, show the scrollbar */
-.factor-description:hover::-webkit-scrollbar {
-  width: 10px; /* Reveal scrollbar when hovered */
-}
-
-.factor-description::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-.factor-description::-webkit-scrollbar-thumb {
-  background-color: #888;
-  border-radius: 10px;
-  border: 2px solid #f1f1f1;
-}
-
-.factor-description::-webkit-scrollbar-thumb:hover {
-  background-color: #555;
-}
-
-.factor-description:hover{
-  background: #192030;
-  color: #ecedef;
-  border-radius: 30px;
-
 }
 
 .subheading {
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-bottom: 10px;
 }
 
 .description {
   font-size: 1em;
+  color: #555;
 }
-

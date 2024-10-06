@@ -1,0 +1,28 @@
+/* Responsive styles */
+@media (min-width: 480px) {
+    .navbar{
+      flex-wrap: wrap;
+    }
+    .heading{
+      font-size: 6rem;
+    }
+  }
+  
+  
+  @media (min-width: 768px) {
+    .heading{
+      font-size: 8rem;
+    }
+
+  }
+  
+  @media (min-width: 1024px) {
+    .hero {
+      grid-template-rows: 100px 1fr;
+    }
+    .heading{
+      font-size: 10rem;
+    }
+
+  }
+  

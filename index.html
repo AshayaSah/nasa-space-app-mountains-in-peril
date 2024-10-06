@@ -4,16 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/media-queries.css"/>
   </head>
   <body>
     <!-- Section 1: Full-screen section with navbar and hero image -->
     <section class="hero">
       <nav class="navbar">
-        <div class="logo">Logo</div>
+        <div class="logo"><a href="#index">Mountains in Peril</a></div>
         <ul class="nav-options">
-          <li><a href="#">Explore</a></li>
-          <li><a href="#">Projects</a></li>
+          <li><a href="#change">Explore</a></li>
+          <li><a href="#factor">Factor</a></li>
+          <li><a href="#consequences">Consequences</a></li>
+          <li><a href="#prediction">Prediction</a></li>
         </ul>
       </nav>
       <div class="hero-image">
@@ -26,7 +29,7 @@
     </section>
 
     <!-- Section 2: Image section -->
-    <section class="change-section">
+    <section id="change" class="change-section">
       <h2>Change Over the Decades</h2>
       <div class="flex-container">
         <div class="column-1">
@@ -61,7 +64,7 @@
 
     <!-- Section 3: Cards section with corousal and cardshover effect -->
 
-    <section class="factors-section">
+    <section id="factor" class="factors-section">
       <h2>Factors Affecting Climate Change</h2>
       <div class="factor-container">
         <!-- start of the cards -->
@@ -84,7 +87,7 @@
               <span class="next">&#10095;</span>
             </div>
           </div>
-          <div class="factor-description">
+          <div class="factor-description left-margin">
             <h3 class="subheading">Global Temperature Change</h3>
             <p class="description">
               <ul>
@@ -100,21 +103,22 @@
 
         <div class="factor-flex-container">
           <div class="factor-description">
-            <h3 class="subheading">Rising Global Temperatures</h3>
+            <h3 class="subheading">CO2 Emission</h3>
             <p class="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
-              amet nulla auctor, vestibulum magna sed, convallis ex.
+                The trend of the atmospheric CO2 concentration with the years signifies a linear increase. Depending on the source the CO2 levels have been around 340 ppm in 1980 and have risen well over 415 ppm in the year 2022, and the graph also gives a clear indication of an upward trend. I do agree with this upward trend when bearing in mind the fact that greenhouse gas emissions continue to increase thus adding to the increase in global warming and climate change. 
+                The rising straight-line curve in the figure reflects the increase in atmospheric CO2 levels and global warming. More amounts of gases in the atmosphere enable the greenhouse effect to trap more heat in the atmosphere. This heat increases the pace at which glaciers in various parts of the world; and notably in polar zones where ice is known to succumb easily to heat.
+                
             </p>
           </div>
-          <div class="factor-image">
+          <div class="factor-image left-margin">
             <div class="carousel">
               <img
-                src="assets/global-serface-temp.png"
+                src="assets/CO2 parts per million.png"
                 alt="Climate Image"
                 class="climate-image"
               />
               <img
-                src="assets/global-surface-temp-2.png"
+                src="assets/CO2 parts per million 2.png"
                 alt="Climate Image"
                 class="climate-image"
               />
@@ -131,12 +135,12 @@
             <div class="factor-image">
               <div class="carousel">
                 <img
-                  src="assets/global-serface-temp.png"
+                  src="assets/sea level.png"
                   alt="Climate Image"
                   class="climate-image"
                 />
                 <img
-                  src="assets/global-surface-temp-2.png"
+                  src="assets/sea level 2.png"
                   alt="Climate Image"
                   class="climate-image"
                 />
@@ -146,32 +150,36 @@
                 <span class="next">&#10095;</span>
               </div>
             </div>
-            <div class="factor-description">
-              <h3 class="subheading">Rising Global Temperatures</h3>
+            <div class="factor-description left-margin">
+              <h3 class="subheading">Rise in Sea Levels</h3>
               <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
-                amet nulla auctor, vestibulum magna sed, convallis ex.
+                The changes in the mean sea levels over the years shows a clear and linear trend. In case of sea levels, the general average from 1993 to 2008 was stimulated from -175mm in 1880 to over 60mm by 2022. It has been rising steadily, thereby proving the effect of global warming especially through the melting of ice caps in the polar region and the thermal expansion of sea water, exerting a great effect on the human developments.
+                Increasing mean temperatures are also the reason for continued increase in sea level due to expansion of water because of heat expansion and through melting of glaciers and caps. It also notes that as glaciers melt, so does do the global sea levels which are dangerous to coast and marine related ecosystems. This is because the cutting down of glaciers also leads to a low supply of fresh water into rivers especially when it is warm, a factor that affects millions of humans.
+
               </p>
             </div>
           </div>
   
           <div class="factor-flex-container">
             <div class="factor-description">
-              <h3 class="subheading">Rising Global Temperatures</h3>
+              <h3 class="subheading">Ocean Heat Anomaly</h3>
               <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
-                amet nulla auctor, vestibulum magna sed, convallis ex.
+                1955-1990: The ocean heat anomaly was also measured because it changed little over the given period and distributed between 5 to -5 x 10 ^{22} Joules. This period shows a fairly balanced partition of heat all through the oceans.
+                •	1990-2022: Perhaps the most dramatic change took place after 1990, and was manifested by the sharp rise in the ocean heat anomaly. This rise trend increased over the years to reach an anomaly of about 20 x 10^22 Joules in 2022.
+                This suggests the inevitable buildup of heat in the ocean especially signaling what may be new climate change processes and changes in heat circulation.
+                They also point out that since 1990, the increase in near-surface ocean heat content implies that oceans are carrying most of the excess heat from global warming. Higher temperatures in water may cause high degree of glacier calving where glaciers meet the sea particularly in Greenland and Antarctica. This melting can in turn destabilize ice sheets and lead to fast rates of ice loss.
+
               </p>
             </div>
-            <div class="factor-image">
+            <div class="factor-image left-margin">
               <div class="carousel">
                 <img
-                  src="assets/global-serface-temp.png"
+                  src="assets/ocean heat.png"
                   alt="Climate Image"
                   class="climate-image"
                 />
                 <img
-                  src="assets/global-surface-temp-2.png"
+                  src="assets/ocean heat 2.png"
                   alt="Climate Image"
                   class="climate-image"
                 />
