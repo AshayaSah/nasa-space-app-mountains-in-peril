@@ -159,10 +159,12 @@ a{
 }
 
 .column-1{
-  padding-right: 20px;
+  border-radius: 20px;
+  height: 100%;
   width: 40%;
   overflow: hidden;
   transition: 0.3s ease-in-out;
+
 }
 
 .column-1:hover{
@@ -170,12 +172,9 @@ a{
 }
 
 .vertical-image {
-  height: 500px;
   width: 100%;
-  border-radius: 20px;
   object-fit: cover;
-  overflow: hidden;
-  box-shadow: 0 1px 10px #192030;
+
 }
 
 .column-2 {
@@ -186,7 +185,7 @@ a{
 }
 
 .text-row {
-  height: 200px;
+  height: 45%;
   padding-bottom: 20px;
   display: flex;
   align-items: center;
@@ -197,19 +196,19 @@ a{
   font-size: 1rem;
 }
 
-.landscape-image {
-  height: 280px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.image-row{
+  height: 55%;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 1px 10px #192030;
-
   transition: 0.3s ease-in-out;
 }
 
-.landscape-image:hover{
+.landscape-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.image-row:hover{
   transform: translateY(-10px);
 }
 
